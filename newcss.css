@@ -23,46 +23,38 @@ section {
 article {
   position: relative;
   top: 50%;
-  padding: 1rem;
   text-align: center;
   transform: translate(-50%, -50%);
-  width: 30%;
-  height:20vh;
-  display: block;
-  z-index: 1000;
-
+  max-width: 30%;
+  height:30vh;
+  /*display: block;*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
 }
 
 article.left{
   left: 75%;
   background-image: url('images/swan-grey.png');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size:contain;
+
 }
 
 
 article.right{
   clear:both;
   left: 25%;
-  background-image: url('images/binder-grey.png');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size:contain;
+  background-image: url('images/binder-grey-new.png');
+
 }
 
-article.left:hoover{
+article.left:hover{
   background-image: url('images/swan-color.png');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size:contain;
+  width: 30%;
 }
 
-article.right:hoover{
+article.right:hover{
   background-image: url('images/binder-color.png');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size:contain;
+  width: 30%;
 }
 
 h1 {
@@ -96,12 +88,54 @@ h1.right{
   width: 50%;
 }
 
-/* Image styles */
+/* ----------- iPhone 5 and 5S ----------- */
 
-img{
-  width: 30%;
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    article {
+      max-width: 45%;
+      height:30vh;
+    }
+    h1{
+      font-size: 3rem;
+    }
 }
-p{
-  width:50%;
-  margin: auto;
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    h1{
+      top: 35%;
+    }
+    article {
+      max-width: 45%;
+      height:30vh;
+    }
+
+}
+
+
+
+
+
+/* ----------- Galaxy S3 ----------- */
+
+/* Portrait and Landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2) {
+
+    article {
+      max-width: 45%;
+      height:40vh;
+    }
 }

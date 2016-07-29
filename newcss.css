@@ -28,11 +28,14 @@ article {
   transform: translate(-50%, -50%);
   width: 30%;
   height:20vh;
+  display: block;
+  z-index: 1000;
+
 }
 
 article.left{
   left: 75%;
-  background-image: url('images/swan-3.png');
+  background-image: url('images/swan-grey.png');
   background-repeat: no-repeat;
   background-position: bottom;
   background-size:contain;
@@ -42,16 +45,25 @@ article.left{
 article.right{
   clear:both;
   left: 25%;
-  background-image: url('images/binder-grey-2.png');
+  background-image: url('images/binder-grey.png');
   background-repeat: no-repeat;
   background-position: bottom;
   background-size:contain;
 }
 
-article:hoover{
-
+article.left:hoover{
+  background-image: url('images/swan-color.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size:contain;
 }
 
+article.right:hoover{
+  background-image: url('images/binder-color.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size:contain;
+}
 
 h1 {
   display: block;

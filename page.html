@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>ROOT Primer</title>
+  <link rel="stylesheet" type="text/css" href="root_primer.css">
+</head>
+<body>
+  <script>
+  function myLeftFunction() {
+      document.getElementById("leftimage").src = "images/swan-color.png";
+  }
+  function myOtherLeftFunction() {
+      document.getElementById("leftimage").src = "images/swan-grey.png";
+  }
+  function myRightFunction() {
+      document.getElementById("rightimage").src = "images/binder-color.png";
+  }
+  function myOtherRightFunction() {
+      document.getElementById("rightimage").src = "images/binder-grey.png";
+  }
+  </script>
+<div id="external">
+  <div id="innerleft" >
+    <div id="innerinner" class="left" onmouseover=myLeftFunction()
+    onmouseout=myOtherLeftFunction()>
+      <img id="leftimage" class="left" src="images/swan-grey.png" alt=""/>
+
+      <div class="content left">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum, orci sed laoreet fermentum, velit metus vehicula dui, in aliquam purus justo ac neque. Donec consequat nec ex ac posuere. Proin sagittis, nisi in ultrices fringilla, tortor enim feugiat odio, dictum rhoncus mi nibh in sem. Nam eget lorem odio.
+      </div>
+    </div>
+  </div>
+  <div id="innerright" >
+    <div id="innerinner" class="right" onmouseover=myRightFunction()
+    onmouseout=myOtherRightFunction()>
+    <img id="rightimage" class=" right" src="images/binder-grey.png" alt=""/>
+    <div class="content right">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum, orci sed laoreet fermentum, velit metus vehicula dui, in aliquam purus justo ac neque. Donec consequat nec ex ac posuere. Proin sagittis, nisi in ultrices fringilla, tortor enim feugiat odio, dictum rhoncus mi nibh in sem. Nam eget lorem odio.
+    </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

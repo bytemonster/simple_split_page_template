@@ -12,9 +12,20 @@ body {
   margin: 0;
 }
 
+a{
+  text-decoration: none;
+
+}
+.left h1{
+  color: #60606c;
+}
+
+.right h1{
+  color: #e4e3e8;
+}
 
 #innerleft{
-  background-color:#B9B8C1;
+  background-color:#e4e3e8;
   width:50%;
   /*float:left;*/
   height:100vh;
@@ -23,7 +34,7 @@ body {
 
 
 #innerright{
-  background-color:#1F1F23;
+  background-color:#60606c;
   width:50%;
   position: absolute;
   left: 50%;
@@ -33,7 +44,7 @@ body {
   /*position: relative;*/
   width:100%;
   position: absolute;
-  top: 35vh;
+  top: 20vh;
   /*height:30vh;*/
   background-color: transparent;
 }
@@ -52,7 +63,7 @@ body {
   border-radius: 15px;
   /*height: 47vh;*/
   background-color: transparent;
-  color: #1F1F23;
+  color: #60606c;
   width: 30vw;
   overflow: scroll;
   margin: auto;
@@ -63,7 +74,7 @@ body {
 }
 
 .content.right{
-  color: #B9B8C1;
+  color: #e4e3e8;
 }
 
 #innerinner:hover div.content{

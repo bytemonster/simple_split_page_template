@@ -17,7 +17,7 @@ a{
 
 }
 .left h1{
-  color: #60606c;
+  color: #3c3c44;
 }
 
 .right h1{
@@ -34,7 +34,7 @@ a{
 
 
 #innerright{
-  background-color:#60606c;
+  background-color:#3c3c44;
   width:50%;
   position: absolute;
   left: 50%;
@@ -63,7 +63,7 @@ a{
   border-radius: 15px;
   /*height: 47vh;*/
   background-color: transparent;
-  color: #60606c;
+  color: #3c3c44;
   width: 30vw;
   overflow: scroll;
   margin: auto;

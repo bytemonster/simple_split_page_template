@@ -5,7 +5,7 @@
 body {
   color: #fff;
   font-family: sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.2em;
   text-align: center;
   /*text-shadow: 0 2px 2px #b6701e;*/
@@ -21,11 +21,11 @@ a{
 }
 
 .right h1{
-  color: #e4e3e8;
+  color: #fff;
 }
 
 #innerleft{
-  background-color:#e4e3e8;
+  background-color:#fff;
   width:50%;
   height:100vh;
   position: absolute;
@@ -97,7 +97,7 @@ p.left{
 }
 
 .content.right{
-  color: #e4e3e8;
+  color: #fff;
 }
 
 #innerinner:hover div.content{
@@ -107,7 +107,7 @@ p.left{
   color: #3c3c44;
 }
 #innerinner:hover p.right{
-  color: #e4e3e8;
+  color: #fff;
 }
 
 img{
@@ -195,7 +195,7 @@ img{
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
     body{
-      font-size: 1.5rem;
+      font-size: 1rem;
       line-height: 2rem;
     }
     .content{

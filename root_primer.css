@@ -64,12 +64,11 @@ a{
   background-color: transparent;
   color: #3c3c44;
   width: 30vw;
-  overflow: scroll;
   margin: auto;
   padding: 10px;
   padding-left: 10%;
-  max-height: 20vh;
-  overflow: scroll;
+  max-height: 100%;
+  overflow-y: scroll;
   text-align: left;
 }
 p.right{
@@ -82,7 +81,7 @@ p.left{
 }
 
 .grow {
-  transition: all .3s ease-in-out;
+  transition: all .15s ease-in-out;
 }
 
 .left.grow:hover img, .right.grow:hover img{

@@ -6,7 +6,7 @@ body {
   color: #fff;
   font-family: sans-serif;
   font-size: 1.25rem;
-  /*line-height: 150%;*/
+  line-height: 1.2em;
   text-align: center;
   /*text-shadow: 0 2px 2px #b6701e;*/
   margin: 0;
@@ -118,4 +118,103 @@ img{
   max-width: 20vw;
   margin: auto;
   display: block;
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  body{
+    line-height: 2rem;
+  }
+  #innerinner{
+    top: 35vh;
+  }
+  .content{
+    margin-top: 5%;
+    width: 40vw;
+  }
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  body{
+    font-size: 1.5rem;
+  }
+  #innerinner{
+    top: 35vh;
+  }
+  .content{
+    margin-top: 5%;
+    width: 40vw;
+  }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    body{
+      font-size: 0.9rem;
+    }
+}
+
+/* ----------- iPad mini ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    body{
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    .content{
+      width: 40vw;
+      /*margin-top: 5%;*/
+    }
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    #innerinner{
+      top:28vh;
+    }
+
 }

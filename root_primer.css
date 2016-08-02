@@ -93,6 +93,7 @@ img{
   height: 30vh;
   /*display: block;
   margin: auto 0 auto auto;*/
+  max-width: 30vw;
   margin: auto;
   display: block;
 }

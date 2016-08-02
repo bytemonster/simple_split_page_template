@@ -23,26 +23,48 @@
   </script>
 <div id="external">
   <div id="innerleft" >
-    <div id="innerinner" class="left" onmouseover=myLeftFunction()
+    <div id="innerinner" class="left grow" onmouseover=myLeftFunction()
     onmouseout=myOtherLeftFunction()>
       <a href="http://root.cern.ch" target="_blank">
+        <p class="left">I have a CERN account</p>
         <h1>SWAN</h1>
-        <img id="leftimage" class="left" src="images/swan-grey.png" alt=""/>
+        <img id="leftimage" class="left grow" src="images/swan-grey.png" alt=""/>
 
         <div class="content left">
-          SWAN (Service for Web based Analysis) is integrated with cernbox inorder for you to anonymously have access to eos, ROOT and all CERN software. Currently it only supports ROOT.
+          <ul>
+            <li>
+              Requiers CERN credentials
+            </li>
+            <li>
+              Stored at CERNBOX
+            </li>
+            <li>
+              All CERN Software
+            </li>
+          </ul>
         </div>
       </a>
     </div>
   </div>
   <div id="innerright" >
-    <div id="innerinner" class="right" onmouseover=myRightFunction()
+    <div id="innerinner" class="right grow" onmouseover=myRightFunction()
     onmouseout=myOtherRightFunction()>
       <a href="http://root.cern.ch" target="_blank">
+        <p class="right">I don't have a CERN account</p>
         <h1>Binder</h1>
-        <img id="rightimage" class=" right" src="images/binder-grey.png" alt=""/>
+        <img id="rightimage" class="grow right" src="images/binder-grey.png" alt=""/>
         <div class="content right">
-          Binder, can open notebooks from a github repository in an executable environment. It is accessible without the need of a CERN account. 
+          <ul>
+            <li>
+              Anonymous
+            </li>
+            <li>
+              Temporary storage
+            </li>
+            <li>
+              A few software packages
+            </li>
+          </ul>
         </div>
       </a>
     </div>

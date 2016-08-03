@@ -16,7 +16,7 @@
   }
   #test{
     overflow: hidden;
-    width: 28vw;
+    width: 27vw;
     margin: auto;
 
   }
@@ -168,6 +168,9 @@ img{
     margin-top: 5%;
     width: 40vw;
   }
+  #test{
+    width: 37vw;
+  }
 }
 
 /* ----------- iPhone 6 ----------- */
@@ -195,6 +198,9 @@ img{
   .content{
     margin-top: 5%;
     width: 40vw;
+  }
+  #test{
+    width: 37vw;
   }
 }
 
@@ -224,6 +230,9 @@ img{
       width: 40vw;
       /*margin-top: 5%;*/
     }
+    #test{
+      width:37vw;
+    }
 
 }
 
@@ -239,3 +248,15 @@ img{
     }
 
 }
+
+@media only screen
+  and (min-device-width: 400px){
+
+    .content{
+      width:100%;
+    }
+
+    #test{
+      width:100%;
+    }
+  }
